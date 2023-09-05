@@ -1,0 +1,50 @@
+---
+import NavBarComponent from '@astro-docs/components/NavbarComponent';
+import MySideBar from "@astro-docs/components/Sidebar/index.astro"
+
+import type { CollectionEntry } from 'astro:content';
+
+type Props = CollectionEntry<'docs'>['data'];
+
+const { title, description } = Astro.props;
+---
+
+<html>
+    <head>
+        <style>
+            /* body {
+                font-family: "Inter Tight", system-ui, sans-serif;
+            }
+            h1 {
+                font-size: 2rem;
+                font-weight: 700;
+                
+            }
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            h3 {
+                font-size: 1.25rem;
+                font-weight: 600;
+            } */
+        </style>
+    </head>
+    <body class="bg-zinc-900">
+        <NavBarComponent/>
+        <section class="flex w-full">
+            <MySideBar/>
+            <section class="p-4 text-white w-4/5">
+                <h1 class="font-bold text-2xl">{title}</h1>
+                <h2 class="font-semibold text-lg">{description}</h2>
+                <article>
+                    <slot/>
+                </article>
+            </section>
+        </section>
+    </body>
+</html>
+
+
+<style>
+</style>

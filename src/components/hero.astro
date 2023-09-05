@@ -1,24 +1,22 @@
 ---
-import { SiAstro, SiTailwindcss } from 'react-icons/si';
 import { AiFillThunderbolt } from 'react-icons/ai';
-import { BiLogoTypescript } from 'react-icons/bi';
 import { FiClipboard } from 'react-icons/fi';
 ---
 <section class="p-4 w-full lg:w-4/5">
     <section class='text-white font-extrabold text-3xl'>Welcome to DeployDocs</section>
-    <p class='font-light text-white text-xl py-4'>
-        If you're in need of a versatile and efficient documentation platform that seamlessly supports popular markup languages like Markdown and the more dynamic MDX, look no further than AstroDocs. Designed with ease of use and robust functionality in mind, AstroDocs leverages 
+    <p class='font-light text-white text-xl sm:text-lg py-4'>
+        An Open Source documentation website if you're in need of a versatile and efficient documentation platform that seamlessly supports popular markup languages like Markdown and the more dynamic MDX, look no further than AstroDocs. Designed with ease of use and robust functionality in mind, AstroDocs leverages 
         the power of Astro, a high-performance static site generator, to make creating and managing documentation a breeze.
     </p>
     <section class="flex items-center gap-4">
-        <section class='px-2 py-4 h-32 w-fit sm:w-full md:w-full rounded-lg bg-zinc-800 shadow-zinc-700 border-[0.25px] border-slate-600'>
+        <section class='px-2 py-4 h-32 w-fit sm:w-full md:w-full rounded-lg bg-zinc-800 shadow-zinc-700 border-[0.25px] border-slate-600 overflow-auto lg:overflow-hidden'>
             <section class="text-white font-semibold text-xl flex items-center gap-2"><AiFillThunderbolt/> Quick Start</section>
             <br/>
             <section class="text-white flex items-center bg-neutral-900 rounded-md p-2 gap-2">
                 <button>
                     <FiClipboard class=''/>
                 </button>
-                <section class='font-mono text-[12px] sm:text-lg md:text-base'>git clone https://github.com/DeployWise/DeployDocs</section>
+                <section class='font-mono text-[12px] sm:text-sm md:text-base overflow-x-scroll lg:overflow-hidden'>git clone https://github.com/DeployWise/DeployDocs</section>
             </section>
         </section>
     </section>
