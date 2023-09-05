@@ -5,8 +5,8 @@ import { FiGithub } from "react-icons/fi";
 const NavBarComponent = (): JSX.Element => {
   return (
     <nav className="p-4 h-16 flex items-center justify-between border-b-[0.5px] border-b-gray-500">
-      <section className="font-extrabold text-white text-xl">
-        DeployDocs
+      <section className="p-2 font-extrabold text-white text-xl hover:bg-zinc-800 hover:bg-opacity-40 rounded hover:rounded-lg">
+        <a href="/">DeployDocs</a>
       </section>
       <section className="sm:hidden flex items-center gap-4">
         <a

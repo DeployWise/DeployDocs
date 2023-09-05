@@ -1,10 +1,13 @@
 ---
 const {Logo, name, active} = Astro.props;
 
-let classNameStr = 'py-1 px-1 flex flex-1 justify-start gap-4 items-center rounded-md text-gray-300 '
+let classNameStr = 'py-2 m-2 px-1 flex flex-1 justify-start gap-4 items-center rounded-md text-gray-300 '
 
 if (active){
     classNameStr += 'bg-purple-800'
+}
+else {
+    classNameStr += 'hover:bg-zinc-800'
 }
 ---
 

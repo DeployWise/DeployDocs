@@ -10,10 +10,11 @@ export default defineConfig({
   integrations: [tailwind(), react(), mdx()],
   markdown: {
     remarkPlugins: [remarkToc]
-  },
-  vite:{
-    ssr:{
-      noExternal: ["react", "react-dom", "react-icons"]
-    }
   }
+  // },
+  // vite:{
+  //   ssr:{
+  //     noExternal: ["react", "react-dom", "react-icons"]
+  //   }
+  // }
 });
