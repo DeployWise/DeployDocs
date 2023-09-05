@@ -1,0 +1,37 @@
+---
+import NavBarComponent from "@astro-docs/components/NavbarComponent"
+import MyMainContent from "@astro-docs/components/hero.astro"
+import MySideBar from "@astro-docs/components/Sidebar/Sidebar.astro"
+import "@fontsource/inter-tight/100.css"
+import "@fontsource/inter-tight/200.css"
+import "@fontsource/inter-tight/300.css"
+import "@fontsource/inter-tight/400.css"
+import "@fontsource/inter-tight/500.css"
+import "@fontsource/inter-tight/600.css"
+import "@fontsource/inter-tight/700.css"
+import "@fontsource/inter-tight/800.css"
+import "@fontsource/inter-tight/900.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<style>
+			body {
+				font-family: "Inter Tight", system-ui, sans-serif;
+				color: var(--color-neutral-900);
+			}
+		</style>
+	</head>
+	<body class="bg-zinc-900">
+		<NavBarComponent/>
+		<section class="flex w-full">
+			<MySideBar/>
+			<MyMainContent/>
+		</section>
+	</body>
+</html>

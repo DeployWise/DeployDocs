@@ -1,0 +1,14 @@
+---
+const {Logo, name, active} = Astro.props;
+
+let classNameStr = 'py-1 px-1 flex flex-1 justify-start gap-4 items-center rounded-md text-gray-300 '
+
+if (active){
+    classNameStr += 'bg-purple-800'
+}
+---
+
+<section class={classNameStr}>
+    <section class="text-lg"><Logo/></section>
+    <section class="text-lg font-normal">{name}</section>
+</section>
